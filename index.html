@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Qr Code Generator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Qr Code Generator</h1>
+    </header>
+    <main>
+        <div class="qr-code-container">
+            <div class="qr-code-form-container">
+                <form>
+                    <textarea spellcheck="false" placeholder="Enter your url..."></textarea>
+                    <button>Generate</button>
+                </form>
+            </div>
+            <div class="qr-code">
+                <div class="qr-code-generator"></div>
+                <div class="download-container disable">
+                    <a href="" class="download"></a>
+                    <button class="button-download">Download <i class="fas fa-download"></i></button>
+                    <p>.png</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/qrcode.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

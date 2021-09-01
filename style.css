@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #333;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.qr-code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.qr-code-form-container {
+  margin-right: 300px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form textarea {
+  border: none;
+  outline: none;
+  padding: 28px;
+  font-size: 2rem;
+  width: 700px;
+  height: 300px;
+  resize: none;
+  border: 2px solid transparent;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+form textarea:focus-within {
+  border: 2px solid rgb(141, 206, 43);
+}
+
+form button {
+  height: 70px;
+  font-size: 1.5rem;
+  background-color: rgb(141, 206, 43);
+  color: white;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+form button:hover {
+  opacity: 0.7;
+}
+
+.qr-code {
+  background-color: #555;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.qr-code-generator img {
+  padding: 10px;
+  background-color: white;
+  min-width: 250px;
+}
+
+.loading {
+  width: 80px;
+  height: 80px;
+  border: 5px solid rgb(141, 206, 43);
+  border-radius: 100%;
+  border-top-color: transparent;
+  animation: loading 0.7s infinite linear;
+  margin-bottom: 40px;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.qr-code-generator {
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.download-container button {
+  width: 300px;
+  height: 60px;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  background-color: rgb(141, 206, 43);
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.download-container button:hover {
+  opacity: 0.7;
+}
+
+.download-container p {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+.download {
+  display: none;
+}
+
+.disable {
+  opacity: 0.2;
+}
+
+.disable:hover {
+  opacity: 0.2 !important;
+}
